@@ -60,7 +60,7 @@ app.get('/info', function(req, res) {
         "zipcode": "75002"
       },
       "medications": ["Empagliflozin", "Afrezza", "Lantus"],
-      "appointments": ["2018-01-15 1:00 - Pediatrician", "2018-02-14 4:00 - Pediatrician", "2018-09-30 8:00 - Pediatrician"]
+      "appointments": ["2019-01-15 1:00 - Pediatrician", "2019-02-14 4:00 - Pediatrician", "2019-07-30 8:00 - Pediatrician"]
     }
 
     res.send(patientdata);
