@@ -2,7 +2,7 @@ var generalInfo = {
   title: "Software Architecture",
   subtitle: "An Open Source Case Study",
   description: "This is an experimental project, and open source reference architecture for modernizing a traditional data system, with modern cloud technology.",
-  technologies: ["RH OpenShift Kubernetes Service","RH OpenShift Source to Image", "Compose for MySQL", "OpenLiberty"],
+  technologies: ["RH OpenShift Kubernetes Service","RH OpenShift Source to Image", "DB2 Warehouse", "OpenLiberty", "Cloud Pak for Data"],
   pattern: ""
 }
 
@@ -108,12 +108,12 @@ function drawModernized(state) {
 function drawMonolith(state) {
   drawWebsphere(state);
   drawDB2(state);
-  drawSynthea(state);
+ // drawSynthea(state);
   drawClassicConnections(state);
 }
 
 function drawDB(state) {
-  var label = "IBM Cloud";
+  var label = "Cloud Pak for Data - OpenShift";
   drawSubsystem(355, 310, 200, 100, label, state);
   drawComposeForMySQL(state);
 }
@@ -288,7 +288,7 @@ function drawClassicConnections(state) {
   }
 
   ctx.beginPath();
-  connectSyntheaToDB();
+  // connectSyntheaToDB();
   connectWebSphereToDB();
   ctx.stroke();
 }
@@ -370,7 +370,7 @@ function drawDataLake(state) {
 }
 
 function drawComposeForMySQL(state) {
-  drawComponent(375, 350, "Compose for MySQL", state);
+  drawComponent(375, 350, "DB2 Warehouse", state);
 }
 
 function displayInfo(info) {

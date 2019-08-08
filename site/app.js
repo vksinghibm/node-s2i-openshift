@@ -52,15 +52,15 @@ app.get('/info', function(req, res) {
   if (CURRENTMODE == MODE.TEST) {
     patientdata = {
       "personal": {
-        "name": "Ralph DAlmeida",
-        "age": 38,
-        "gender": "male",
-        "street": "34 Main Street",
-        "city": "Toronto",
-        "zipcode": "M5H 1T1"
+        "name": "Maria Soto",
+        "age": 8,
+        "gender": "female",
+        "street": "766 Dach Park",
+        "city": "Allen, TX",
+        "zipcode": "75002"
       },
-      "medications": ["Metoprolol", "ACE inhibitors", "Vitamin D"],
-      "appointments": ["2018-01-15 1:00 - Dentist", "2018-02-14 4:00 - Internal Medicine", "2018-09-30 8:00 - Pediatry"]
+      "medications": ["Empagliflozin", "Afrezza", "Lantus"],
+      "appointments": ["2018-01-15 1:00 - Pediatrician", "2018-02-14 4:00 - Pediatrician", "2018-09-30 8:00 - Pediatrician"]
     }
 
     res.send(patientdata);
@@ -102,13 +102,13 @@ app.get('/measurements', function(req, res) {
   if (CURRENTMODE == MODE.TEST) {
 
   measurements = {
-    smokerstatus: 'Former smoker',
-    dia: 88,
+    smokerstatus: 'Non-smoker',
+    dia: 70,
     sys: 130,
-    bmi: 19.74,
+    bmi: 19,
     bmirange: 'normal',
-    weight: 54.42,
-    height: 1.6603
+    weight: 25.8,
+    height: 1.2
   }
 
     res.send(measurements);

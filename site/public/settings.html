@@ -20,7 +20,7 @@
       <div class="control">
         <div class="brand">
           <img class="logo" src="/images/fictional.svg" alt="Example Health logo">
-          <div class="Fictional">Example Health</div>
+          <div class="Fictional">Patient Portal</div>
         </div>
         <menu class="menu">
           <a class="dimmed" href="./index.html">
@@ -40,30 +40,22 @@
 
       <div class="settingsdetails">
         <div class="settingstext">
-          This Example Health patient UI runs as a microservice on Kubernetes. The app was designed to be able to integrate with different kinds of back ends to demonstrate how flexible and versatile microservices can be in a few real world
-          situations.
-        </div>
-        <div class="settingstext">
-          By default the app just displays preformatted canned data responses in test mode. You can choose to integrate with either a cobol on Z deployment, or a Java Liberty on OpenShift deployment. These integrations are described in related code
-          patterns.
+          Customize the back-end used by the patient portal.
         </div>
 
         <div class="buttons">
           <div id="localbutton" class="settingsbutton settingsbuttonselected" onclick="chooseLocal()">
-            <div class="settingslabel">node.js</div>
-            <div><img class="settingsicon" src="./images/testlogo.svg" alt=""></div>
-          </div>
-          <div id="cobolbutton" class="settingsbutton" onclick="chooseCobol()">
-            <div class="settingslabel">cobol</div>
+            <div class="settingslabel">db2 on-prem</div>
             <div><img class="settingsicon" src="./images/zlogo.svg" alt=""></div>
           </div>
+
           <div id="javabutton" class="settingsbutton" onclick="chooseJava()">
-            <div class="settingslabel">java</div>
-            <div><img class="settingsicon" src="./images/openshiftlogo.svg" alt=""></div>
+            <div class="settingslabel">cloud pak 4 data</div>
+            <div><img class="settingsicon" src="./images/cpd.svg" alt=""></div>
           </div>
         </div>
         <input type="text" id="url" name="url" placeholder="enter backend url here" class="urlfield" oninput="checkurl()"/>
-        <div id="runmode" class="runmode">currently running in test mode, with node js</div>
+        <!-- <div id="runmode" class="runmode">currently running in test mode, with node js</div> -->
 
       </div>
 
