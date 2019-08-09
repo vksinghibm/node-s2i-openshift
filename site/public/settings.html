@@ -20,7 +20,7 @@
       <div class="control">
         <div class="brand">
           <img class="logo" src="/images/fictional.svg" alt="Example Health logo">
-          <div class="Fictional">Patient Portal</div>
+          <div class="Fictional">Patient Health</div>
         </div>
         <menu class="menu">
           <a class="dimmed" href="./index.html">
@@ -40,22 +40,25 @@
 
       <div class="settingsdetails">
         <div class="settingstext">
-          Customize the back-end used by the patient portal.
+          This Example Health patient UI runs as a microservice on OpenShift. The app was designed to be able to integrate with different backends. Enter a backend URL from which to read patient data; then choose the corresponding datasource.
         </div>
 
         <div class="buttons">
           <div id="localbutton" class="settingsbutton settingsbuttonselected" onclick="chooseLocal()">
-            <div class="settingslabel">db2 on-prem</div>
+            <div class="settingslabel">DB2 on-prem</div>
             <div><img class="settingsicon" src="./images/zlogo.svg" alt=""></div>
           </div>
-
+          <div id="cobolbutton" class="settingsbutton" onclick="chooseCobol()">
+            <div class="settingslabel">dev</div>
+            <div><img class="settingsicon" src="./images/testlogo.svg" alt=""></div>
+          </div>
           <div id="javabutton" class="settingsbutton" onclick="chooseJava()">
             <div class="settingslabel">cloud pak 4 data</div>
             <div><img class="settingsicon" src="./images/cpd.svg" alt=""></div>
           </div>
         </div>
-        <input type="text" id="url" name="url" placeholder="enter backend url here" class="urlfield" oninput="checkurl()"/>
-        <!-- <div id="runmode" class="runmode">currently running in test mode, with node js</div> -->
+        <input type="text" id="url" name="url" ptlaceholder="enter backend url here" class="urlfield" oninput="checkurl()"/>
+        <div id="runmode" class="runmode">Currently reading from DB2 on-premise.</div>
 
       </div>
 

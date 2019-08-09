@@ -80,7 +80,7 @@ function highlightJava() {
   cobolbutton.classList.remove("settingsbuttonselected");
   javabutton.classList.add('settingsbuttonselected');
   javabutton.style.opacity = 1;
-  setRunMode('Currently reading data from a Java OpenShift microservice');
+  setRunMode('Currently reading data from Cloud Pak for Data');
 }
 
 
@@ -97,7 +97,7 @@ function highlightCobol() {
   javabutton.classList.remove("settingsbuttonselected");
   cobolbutton.classList.add('settingsbuttonselected');
   cobolbutton.style.opacity = 1;
-  setRunMode('Currently reading data from a Cobol Z application');
+  setRunMode('Currently reading data from a dev environment');
 }
 
 function setModeOnServer(mode) {
@@ -136,7 +136,7 @@ function highlightLocal() {
   localbutton.classList.add("settingsbuttonselected");
   javabutton.classList.remove("settingsbuttonselected");
   cobolbutton.classList.remove('settingsbuttonselected');
-  setRunMode('Currently reading data from a Node OpenShift microservice - demo mode');
+  setRunMode('Currently reading data from DB2 on-prem.');
 }
 
 function chooseLocal() {
